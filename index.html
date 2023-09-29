@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Animé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+
+<body>
+
+    <div id="page">
+        <div id="container">
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="h3"></div>
+        </div>
+    </div>
+
+    <div class="container hidden">
+        <img class="imgLogo" src="logo-color.png" width="100" height="50">
+        <div class="tabs">
+            <div class="tab1 tab_active">Login</div>
+            <div class="tab2">Sign Up</div>
+        </div>
+        <div class="tab_highl tab_highl_la"></div>
+        <div class="login_form">
+            <form action="javascript:void();">
+                <div class="input_container">
+                    <input type="text" name="username" class="input_field" placeholder="Nom d'utilisateur" autocomplete="off"><i class="fa-solid fa-user icon"></i>
+                </div>
+                <div class="input_container">
+                    <input type="password" name="password" class="input_field" placeholder="Mot de passe" autocomplete="off"><i class="fa-solid fa-key icon"></i>
+                </div>
+                <div class="input_container forgot_password">
+                    <span>Mot de passe oublié ?</span>
+                </div>
+                <div class="form_footer">
+                    <img src="wave.png">
+                </div>
+                <button class="submit_button">Login</button>
+            </form>
+        </div>
+
+        <div class="signup_form">
+            <form action="javascript:void();">
+                <div class="input_container">
+                    <input type="email" name="email" class="input_field" placeholder="E-Mail" autocomplete="off"><i class="fa-solid fa-envelope icon"></i>
+                </div>
+                <div class="input_container">
+                    <input type="text" name="username" class="input_field" placeholder="Nom d'utilisateur" autocomplete="off"><i class="fa-solid fa-user icon"></i>
+                </div>
+                <div class="input_container">
+                    <input type="password" name="password" class="input_field" placeholder="Mot de passe" autocomplete="off"><i class="fa-solid fa-key icon"></i>
+                </div>
+                <div class="input_container">
+                    <input type="password" name="confirmPassword" class="input_field" placeholder="Confirmer" autocomplete="off"><i class="fa-solid fa-key icon"></i>
+                </div>
+                
+                <div class="form_footer">
+                    <img src="wave.png">
+                </div>
+                <button class="submit_button">S'inscrir</button>
+            </form>
+        </div>
+
+        <div class="bottomline">
+            <span>Vous n'avez pas de compte?</span>
+            <span class="signup tab2">S'inscrir</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="loader.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
